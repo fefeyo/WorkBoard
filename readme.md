@@ -49,3 +49,18 @@ Homestead.json
 
 #### case2
 `gulp watch`コマンドを叩いて`resources->assets`の中にあるファイルを編集
+
+## エラーやメッセージを表示する flash の使い方
+
+```
+flash()->info('Message')
+flash()->success('Message')
+flash()->error('Message')
+flash()->warning('Message')
+flash()->overlay('Modal Message', 'Modal Title')
+```
+これをroute.phpまたはcontrollerに書く。
+リダイレクト先のメッセージを出したい場所で
+```
+@include('flash::message')
+```
