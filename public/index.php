@@ -56,4 +56,6 @@ $response = $kernel->handle(
 
 $response->send();
 
+SassCompiler::run("scss/", "css/");
+
 $kernel->terminate($request, $response);

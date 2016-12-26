@@ -16,11 +16,13 @@ return [
     'accepted'             => 'Polje :attribute mora biti prihvaćeno.',
     'active_url'           => 'Polje :attribute nije validan URL.',
     'after'                => 'Polje :attribute mora biti datum poslije :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Polje :attribute može sadržati samo slova.',
     'alpha_dash'           => 'Polje :attribute može sadržati samo slova, brojeve i povlake.',
     'alpha_num'            => 'Polje :attribute može sadržati samo slova i brojeve.',
     'array'                => 'Polje :attribute mora biti niz.',
     'before'               => 'Polje :attribute mora biti datum prije :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Polje :attribute mora biti izmedju :min - :max.',
         'file'    => 'Fajl :attribute mora biti izmedju :min - :max kilobajta.',
@@ -38,6 +40,7 @@ return [
     'distinct'             => 'The :attribute field has a duplicate value.',
     'email'                => 'Format polja :attribute mora biti validan email.',
     'exists'               => 'Odabrano polje :attribute nije validno.',
+    'file'                 => 'The :attribute must be a file.',
     'filled'               => 'Polje :attribute je obavezno.',
     'image'                => 'Polje :attribute mora biti slika.',
     'in'                   => 'Odabrano polje :attribute nije validno.',
@@ -52,6 +55,7 @@ return [
         'array'   => 'Polje :attribute mora sadržati manje od :max karaktera.',
     ],
     'mimes'                => 'Polje :attribute mora biti fajl tipa: :values.',
+    'mimetypes'            => 'Polje :attribute mora biti fajl tipa: :values.',
     'min'                  => [
         'numeric' => 'Polje :attribute mora biti najmanje :min.',
         'file'    => 'Fajl :attribute mora biti najmanje :min kilobajta.',
@@ -79,6 +83,7 @@ return [
     'string'               => 'Polje :attribute mora sadrzavati slova.',
     'timezone'             => 'Polje :attribute mora biti ispravna vremenska zona.',
     'unique'               => 'Polje :attribute već postoji.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Format polja :attribute nije validan.',
 
     /*

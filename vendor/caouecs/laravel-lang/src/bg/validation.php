@@ -16,11 +16,13 @@ return [
     'accepted'             => 'Трябва да приемете :attribute.',
     'active_url'           => 'Полето :attribute не е валиден URL адрес.',
     'after'                => 'Полето :attribute трябва да бъде дата след :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Полето :attribute трябва да съдържа само букви.',
     'alpha_dash'           => 'Полето :attribute трябва да съдържа само букви, цифри, долна черта и тире.',
     'alpha_num'            => 'Полето :attribute трябва да съдържа само букви и цифри.',
     'array'                => 'Полето :attribute трябва да бъде масив.',
     'before'               => 'Полето :attribute трябва да бъде дата преди :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Полето :attribute трябва да бъде между :min и :max.',
         'file'    => 'Полето :attribute трябва да бъде между :min и :max килобайта.',
@@ -38,6 +40,7 @@ return [
     'distinct'             => 'The :attribute field has a duplicate value.',
     'email'                => 'Полето :attribute е в невалиден формат.',
     'exists'               => 'Избранато поле :attribute вече съществува.',
+    'file'                 => 'The :attribute must be a file.',
     'filled'               => 'Полето :attribute е задължително.',
     'image'                => 'Полето :attribute трябва да бъде изображение.',
     'in'                   => 'Избраното поле :attribute е невалидно.',
@@ -52,6 +55,7 @@ return [
         'array'   => 'Полето :attribute трябва да има по-малко от :max елемента.',
     ],
     'mimes'                => 'Полето :attribute трябва да бъде файл от тип: :values.',
+    'mimetypes'            => 'Полето :attribute трябва да бъде файл от тип: :values.',
     'min'                  => [
         'numeric' => 'Полето :attribute трябва да бъде минимум :min.',
         'file'    => 'Полето :attribute трябва да бъде минимум :min килобайта.',
@@ -79,6 +83,7 @@ return [
     'string'               => 'Полето :attribute трябва да бъде знаков низ.',
     'timezone'             => 'Полето :attribute трябва да съдържа валидна часова зона.',
     'unique'               => 'Полето :attribute вече съществува.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Полето :attribute е в невалиден формат.',
 
     /*

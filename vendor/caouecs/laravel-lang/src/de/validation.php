@@ -16,11 +16,13 @@ return [
     'accepted'             => ':attribute muss akzeptiert werden.',
     'active_url'           => ':attribute ist keine gültige Internet-Adresse.',
     'after'                => ':attribute muss ein Datum nach dem :date sein.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => ':attribute darf nur aus Buchstaben bestehen.',
     'alpha_dash'           => ':attribute darf nur aus Buchstaben, Zahlen, Binde- und Unterstrichen bestehen. Umlaute (ä, ö, ü) und Eszett (ß) sind nicht erlaubt.',
     'alpha_num'            => ':attribute darf nur aus Buchstaben und Zahlen bestehen.',
     'array'                => ':attribute muss ein Array sein.',
     'before'               => ':attribute muss ein Datum vor dem :date sein.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => ':attribute muss zwischen :min & :max liegen.',
         'file'    => ':attribute muss zwischen :min & :max Kilobytes groß sein.',
@@ -34,14 +36,15 @@ return [
     'different'            => ':attribute und :other müssen sich unterscheiden.',
     'digits'               => ':attribute muss :digits Stellen haben.',
     'digits_between'       => ':attribute muss zwischen :min und :max Stellen haben.',
-    'dimensions'           => 'The :attribute has invalid image dimensions.',
-    'distinct'             => 'The :attribute field has a duplicate value.',
-    'email'                => ':attribute Format ist ungültig.',
+    'dimensions'           => ':attribute hat ungültige Bildabmessungen.',
+    'distinct'             => 'Das Feld :attribute beinhaltet einen bereits vorhandenen Wert.',
+    'email'                => ':attribute muss eine gültige E-Mail-Adresse sein.',
     'exists'               => 'Der gewählte Wert für :attribute ist ungültig.',
+    'file'                 => ':attribute muss eine Datei sein.',
     'filled'               => ':attribute muss ausgefüllt sein.',
     'image'                => ':attribute muss ein Bild sein.',
     'in'                   => 'Der gewählte Wert für :attribute ist ungültig.',
-    'in_array'             => 'The :attribute field does not exist in :other.',
+    'in_array'             => 'Der gewählte Wert für :attribute kommt nicht in :other vor.',
     'integer'              => ':attribute muss eine ganze Zahl sein.',
     'ip'                   => ':attribute muss eine gültige IP-Adresse sein.',
     'json'                 => ':attribute muss ein gültiger JSON-String sein.',
@@ -52,6 +55,7 @@ return [
         'array'   => ':attribute darf nicht mehr als :max Elemente haben.',
     ],
     'mimes'                => ':attribute muss den Dateityp :values haben.',
+    'mimetypes'            => ':attribute muss den Dateityp :values haben.',
     'min'                  => [
         'numeric' => ':attribute muss mindestens :min sein.',
         'file'    => ':attribute muss mindestens :min Kilobytes groß sein.',
@@ -60,7 +64,7 @@ return [
     ],
     'not_in'               => 'Der gewählte Wert für :attribute ist ungültig.',
     'numeric'              => ':attribute muss eine Zahl sein.',
-    'present'              => 'The :attribute field must be present.',
+    'present'              => 'Das Feld :attribute muss vorhanden sein.',
     'regex'                => ':attribute Format ist ungültig.',
     'required'             => ':attribute muss ausgefüllt sein.',
     'required_if'          => ':attribute muss ausgefüllt sein, wenn :other :value ist.',
@@ -79,6 +83,7 @@ return [
     'string'               => ':attribute muss ein String sein.',
     'timezone'             => ':attribute muss eine gültige Zeitzone sein.',
     'unique'               => ':attribute ist schon vergeben.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'Das Format von :attribute ist ungültig.',
 
     /*
@@ -110,7 +115,9 @@ return [
     */
 
     'attributes' => [
-        //
+        'username' => 'Benutzername',
+        'password' => 'Passwort',
+        'email'    => 'E-Mail-Adresse',
     ],
 
 ];

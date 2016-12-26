@@ -1,0 +1,10 @@
+h2 {
+  font-size: 1.3em;
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+.flex1 {
+  flex: 1;
+}

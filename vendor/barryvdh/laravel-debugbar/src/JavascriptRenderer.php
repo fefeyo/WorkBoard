@@ -43,7 +43,10 @@ class JavascriptRenderer extends BaseJavascriptRenderer
 
         $jsRoute = route('debugbar.assets.js', [
             'v' => $this->getModifiedTime('js')
-       ]);
+        ]);
+
+        $cssRoute = preg_replace('/\Ahttps?:/', '', $cssRoute);
+        $jsRoute  = preg_replace('/\Ahttps?:/', '', $jsRoute);
 
         $html  = "<link rel='stylesheet' type='text/css' property='stylesheet' href='{$cssRoute}'>";
         $html .= "<script type='text/javascript' src='{$jsRoute}'></script>";
@@ -107,7 +110,7 @@ class JavascriptRenderer extends BaseJavascriptRenderer
         }
 
         if (is_array($uri)) {
-            $uris = array();
+            $uris = [];
             foreach ($uri as $u) {
                 $uris[] = $this->makeUriRelativeTo($u, $root);
             }

@@ -16,11 +16,13 @@ return [
     'accepted'             => 'O campo :attribute deverá ser aceite.',
     'active_url'           => 'O campo :attribute não contém um URL válido.',
     'after'                => 'O campo :attribute deverá conter uma data posterior a :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'O campo :attribute deverá conter apenas letras.',
     'alpha_dash'           => 'O campo :attribute deverá conter apenas letras, números e traços.',
     'alpha_num'            => 'O campo :attribute deverá conter apenas letras e números .',
     'array'                => 'O campo :attribute deverá conter uma coleção de elementos.',
     'before'               => 'O campo :attribute deverá conter uma data anterior a :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'O campo :attribute deverá ter um valor entre :min - :max.',
         'file'    => 'O campo :attribute deverá ter um tamanho entre :min - :max kilobytes.',
@@ -38,6 +40,7 @@ return [
     'distinct'             => 'O campo :attribute contém um valor duplicado.',
     'email'                => 'O campo :attribute não contém um endereço de correio eletrónico válido.',
     'exists'               => 'O valor selecionado para o campo :attribute é inválido.',
+    'file'                 => 'O campo :attribute deverá conter um ficheiro.',
     'filled'               => 'É obrigatória a indicação de um valor para o campo :attribute.',
     'image'                => 'O campo :attribute deverá conter uma imagem.',
     'in'                   => 'O campo :attribute não contém um valor válido.',
@@ -52,6 +55,7 @@ return [
         'array'   => 'O campo :attribute não deverá conter mais de :max elementos.',
     ],
     'mimes'                => 'O campo :attribute deverá conter um ficheiro do tipo: :values.',
+    'mimetypes'            => 'O campo :attribute deverá conter um ficheiro do tipo: :values.',
     'min'                  => [
         'numeric' => 'O campo :attribute deverá ter um valor superior ou igual a :min.',
         'file'    => 'O campo :attribute deverá ter no mínimo :min kilobytes.',
@@ -79,6 +83,7 @@ return [
     'string'               => 'O campo :attribute deverá conter texto.',
     'timezone'             => 'O campo :attribute deverá ter um fuso horário válido.',
     'unique'               => 'O valor indicado para o campo :attribute já se encontra registado.',
+    'uploaded'             => 'O upload do ficheiro :attribute falhou.',
     'url'                  => 'O formato do URL indicado para o campo :attribute é inválido.',
 
     /*

@@ -22,6 +22,7 @@ Bosnian (bs)
 Brazilian (pt-BR)
 
 * [c0h1b4](https://github.com/c0h1b4)
+* [Fernando Henrique Bandeira](https://github.com/fernandobandeira)
 * [Gabriel Machado](https://github.com/gmsantosxl)
 * [insign](https://github.com/insign)
 * [miguelbgouveia](https://github.com/miguelbgouveia)
@@ -145,6 +146,7 @@ Indonesian (id)
 * [Budi Irawan](https://github.com/deerawan)
 * [Ivo Idham Perdameian](https://github.com/idhamperdameian)
 * [William Notowidagdo](https://github.com/williamn)
+* [Salahuddin Hairai](https://github.com/od3n)
 
 Italian (it)
 
@@ -174,6 +176,11 @@ Macedonian (mk)
 
 * [Marko Aleksic](https://github.com/psybaron)
 * [maced0n](https://github.com/maced0n)
+
+Malay (ms)
+
+* [Salahuddin Hairai](https://github.com/od3n)
+* [Kamarool Karim](https://github.com/kamaroolkarim)
 
 Montenegrin (me)
 

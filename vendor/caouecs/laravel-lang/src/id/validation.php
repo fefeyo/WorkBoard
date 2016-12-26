@@ -16,11 +16,13 @@ return [
     'accepted'             => 'Isian :attribute harus diterima.',
     'active_url'           => 'Isian :attribute bukan URL yang valid.',
     'after'                => 'Isian :attribute harus tanggal setelah :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Isian :attribute hanya boleh berisi huruf.',
     'alpha_dash'           => 'Isian :attribute hanya boleh berisi huruf, angka, dan strip.',
     'alpha_num'            => 'Isian :attribute hanya boleh berisi huruf dan angka.',
     'array'                => 'Isian :attribute harus berupa sebuah array.',
     'before'               => 'Isian :attribute harus tanggal sebelum :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'Isian :attribute harus antara :min dan :max.',
         'file'    => 'Isian :attribute harus antara :min dan :max kilobytes.',
@@ -34,10 +36,11 @@ return [
     'different'            => 'Isian :attribute dan :other harus berbeda.',
     'digits'               => 'Isian :attribute harus berupa angka :digits.',
     'digits_between'       => 'Isian :attribute harus antara angka :min dan :max.',
-    'dimensions'           => 'The :attribute has invalid image dimensions.',
+    'dimensions'           => 'Bidang :attribute tidak memiliki dimensi gambar yang valid.',
     'distinct'             => 'Bidang isian :attribute memiliki nilai yang duplikat.',
     'email'                => 'Isian :attribute harus berupa alamat surel yang valid.',
     'exists'               => 'Isian :attribute yang dipilih tidak valid.',
+    'file'                 => 'Bidang :attribute harus berupa sebuah berkas.',
     'filled'               => 'Bidang isian :attribute wajib diisi.',
     'image'                => 'Isian :attribute harus berupa gambar.',
     'in'                   => 'Isian :attribute yang dipilih tidak valid.',
@@ -52,6 +55,7 @@ return [
         'array'   => 'Isian :attribute seharusnya tidak lebih dari :max item.',
     ],
     'mimes'                => 'Isian :attribute harus dokumen berjenis : :values.',
+    'mimetypes'            => 'Isian :attribute harus dokumen berjenis : :values.',
     'min'                  => [
         'numeric' => 'Isian :attribute harus minimal :min.',
         'file'    => 'Isian :attribute harus minimal :min kilobytes.',
@@ -79,6 +83,7 @@ return [
     'string'               => 'Isian :attribute harus berupa string.',
     'timezone'             => 'Isian :attribute harus berupa zona waktu yang valid.',
     'unique'               => 'Isian :attribute sudah ada sebelumnya.',
+    'uploaded'             => 'Isian :attribute gagal diunggah.',
     'url'                  => 'Format isian :attribute tidak valid.',
 
     /*
