@@ -3,10 +3,30 @@ h2 {
     margin: 0;
 }
 
-.flex {
+.skill-title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.skill-contains {
+    margin-top: 5px;
+    font-size: 1.0em;
+}
+
+.wrapper {
     display: flex;
 }
 
-.flex1 {
+.half_contains {
+    flex: 1;
+}
+
+.profile_header {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.split_title {
+    display: flex;
     flex: 1;
 }

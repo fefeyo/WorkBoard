@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInformationsTable extends Migration
+class CreateExperienceInfoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,15 @@ class CreateInformationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('info', function (Blueprint $table) {
+        Schema::create('experience', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
-            $table->json('base');
-            $table->json('school');
-            $table->json('career');
-            $table->json('skill');
+            $table->string('work_exp');
+            $table->string('school_exp');
+            $table->string('hackathon_exp');
+            $table->string('intern_exp');
+            $table->string('pr_exp');
+            $table->json('skills');
             $table->timestamps();
         });
     }
@@ -30,6 +32,6 @@ class CreateInformationsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('info');
+        Schema::drop('experience');
     }
 }

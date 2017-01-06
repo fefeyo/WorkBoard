@@ -110,14 +110,82 @@
                     <form class="registerForm" action="auth/register" method="post">
                         {!! csrf_field() !!}
                         <div class="modal-body">
-                            <label for="name">ユーザー名</label>
-                            <input type="text" name="name" class="form-control" placeholder="username">
-                            <label for="email">メールアドレス</label>
-                            <input type="email" name="email" class="form-control" placeholder="email">
-                            <label for="password">パスワード</label>
-                            <input type="password" name="password" class="form-control" placeholder="password">
-                            <label for="password">パスワード確認</label>
-                            <input type="password" name="password_confirmation" class="form-control" placeholder="password">
+                            <div class="form-group">
+                                <label for="email">メールアドレス</label>
+                                <input type="email" name="email" class="form-control" placeholder="email" required>
+                                <label for="password">パスワード</label>
+                                <input type="password" name="password" class="form-control" placeholder="password" minlength="6" required>
+                                <label for="password">パスワード確認</label>
+                                <input type="password" name="password_confirmation" class="form-control" placeholder="password" minlength="6" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">性</label>
+                                <input type="text" name="family_name" class="form-control" placeholder="family" required>
+                                <label for="name">名</label>
+                                <input type="text" name="last_name" class="form-control" placeholder="last" required>
+                                <label for="gender">男</label>
+                                <input type="radio" name="gender" value="0" class="form-control" required>
+                                <label for="gender">女</label>
+                                <input type="radio" name="gender" value="1" class="form-control" required>
+                                <label for="birth">誕生日</label>
+                                <input type="date" name="birth" class="form-control" required>
+                                <label for="pref_id">在住都道府県</label>
+                                <select name="pref_id" class="form-control" required>
+                                    <option value="1">北海道</option>
+                                    <option value="2">青森県</option>
+                                    <option value="3">岩手県</option>
+                                    <option value="4">宮城県</option>
+                                    <option value="5">秋田県</option>
+                                    <option value="6">山形県</option>
+                                    <option value="7">福島県</option>
+                                    <option value="8">茨城県</option>
+                                    <option value="9">栃木県</option>
+                                    <option value="10">群馬県</option>
+                                    <option value="11">埼玉県</option>
+                                    <option value="12">千葉県</option>
+                                    <option value="13">東京都</option>
+                                    <option value="14">神奈川県</option>
+                                    <option value="15">新潟県</option>
+                                    <option value="16">富山県</option>
+                                    <option value="17">石川県</option>
+                                    <option value="18">福井県</option>
+                                    <option value="19">山梨県</option>
+                                    <option value="20">長野県</option>
+                                    <option value="21">岐阜県</option>
+                                    <option value="22">静岡県</option>
+                                    <option value="23">愛知県</option>
+                                    <option value="24">三重県</option>
+                                    <option value="25">滋賀県</option>
+                                    <option value="26">京都府</option>
+                                    <option value="27">大阪府</option>
+                                    <option value="28">兵庫県</option>
+                                    <option value="29">奈良県</option>
+                                    <option value="30">和歌山県</option>
+                                    <option value="31">鳥取県</option>
+                                    <option value="32">島根県</option>
+                                    <option value="33">岡山県</option>
+                                    <option value="34">広島県</option>
+                                    <option value="35">山口県</option>
+                                    <option value="36">徳島県</option>
+                                    <option value="37">香川県</option>
+                                    <option value="38">愛媛県</option>
+                                    <option value="39">高知県</option>
+                                    <option value="40">福岡県</option>
+                                    <option value="41">佐賀県</option>
+                                    <option value="42">長崎県</option>
+                                    <option value="43">熊本県</option>
+                                    <option value="44">大分県</option>
+                                    <option value="45">宮崎県</option>
+                                    <option value="46">鹿児島県</option>
+                                    <option value="47">沖縄県</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="student">学生</label>
+                                <input type="radio" name="role" value="student" class="form-control" required>
+                                <label for="student">企業</label>
+                                <input type="radio" name="role" value="company" class="form-control" required>                            
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <input type="submit" name="submit" value="新規登録" class="btn btn-primary">
@@ -130,10 +198,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    $(function() {
-        console.log('jquery3');
-    });
-    </script>
 </body>
 </html>
